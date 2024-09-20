@@ -6,20 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: #fff;
+            color: #1c1e21;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 100px;
+        }
         .main{
             align-items: center;
-            top: 50
+            top: 50%;
+            display: flex;
+            flex-direction: row;
         }
-        .main .websitename p{
+        .main #webname{
             font-size: 48px;
             color:blue;
             font-weight: 900;
         }
-        .main .websitedes {
+        .main #webdes {
             font-size: 24px;
             line-height: 28px;
             width: auto;
             font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+        }
+        form{
+            border-radius: 5px;
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            align-items: center;
+            gap:20px;
+            box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.5);;
+        }
+        form input{
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        form button{
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        form #login{
+            background-color: #0866ff;
+            border:#4267b2 1px solid;
+        }
+        form #signup{
+            background-color: rgb(21, 228, 21);
+            border:#42b72a 1px solid;
         }
     </style>
  </head>
@@ -32,10 +71,10 @@
         <form action="">
             <input type="text" value="Email addresss or phone number">
             <input type="text" value="Password">
-            <button type="button" value="Log in">Log in</button>
+            <button type="button" value="Log in"id="login">Log in</button>
             <a href="#">Forgotten password?</a>
             <hr>
-            <button type="button" value="Create new account">Create new account</button>
+            <button type="button" value="Create new account" id="signup">Create new account</button>
         </form>
     </div>
  </body>
