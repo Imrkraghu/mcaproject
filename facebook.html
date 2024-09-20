@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .main{
+            align-items: center;
+            top: 50
+        }
         .main .websitename p{
             font-size: 48px;
             color:blue;
             font-weight: 900;
         }
-        .main .websitedes p{
+        .main .websitedes {
             font-size: 24px;
             line-height: 28px;
             width: auto;
@@ -22,9 +26,8 @@
  <body>
     <div class="main">
         <div class="websitename">
-            <p>facebook</p></div>
-        <div class="websitedes">
-            <p>Facebook helps you connect and share with the people in your life.</p>
+            <p id="webname">facebook</p>
+            <p id="webdes">Facebook helps you connect and share with the people in your life.</p>
         </div>
         <form action="">
             <input type="text" value="Email addresss or phone number">
