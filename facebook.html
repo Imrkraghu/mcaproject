@@ -19,19 +19,20 @@
             top: 50%;
             display: flex;
             flex-direction: row;
+            justify-content: center;
         }
-        .main #webname{
-            font-size: 48px;
-            color:blue;
-            font-weight: 900;
-            line-height:1px;
+        .main .webname img{
+            width: 350px;
+            margin-bottom: none;
+            height: auto;
         }
         .main #webdes {
+            display: flex;
+            flex-direction: row;
             font-size: 24px;
-            line-height: 1px;
-            margin-top:none;
-            margin-right: 50px;
-            width: auto;
+            line-height: 50px;
+            margin:none 30px 30px none;
+            width: 450px;
             font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
         }
         form{
@@ -64,11 +65,15 @@
             border:#42b72a 1px solid;
         }
     </style>
+    <script>
+        var x = document.getElementsByName(input).values;
+        document.addEventListener()
+    </script>
  </head>
  <body>
     <div class="main">
-        <div class="websitename">
-            <p id="webname">facebook</p>
+        <div class="webname">
+            <img src="logo.svg" alt="">
             <p id="webdes">Facebook helps you connect and share with the people in your life.</p>
         </div>
         <form action="">
